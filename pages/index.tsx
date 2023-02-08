@@ -42,7 +42,7 @@ export async function getServerSideProps() {
     process.env.SUPABASE_ANON_KEY || ""
   );
 
-  let { data } = await supabase.from("nsg-gallery").select();
+  const { data } = await supabase.from("nsg-gallery").select();
 
   return {
     props: {
