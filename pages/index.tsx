@@ -4,6 +4,8 @@ import Head from "next/head";
 
 import BlurImage from "../components/image";
 import { IImage } from "../typing";
+import { AiOutlineGithub } from "react-icons/ai";
+import Link from "next/link";
 
 type props = {
   images: IImage[];
@@ -16,13 +18,18 @@ const Home = ({ images }: props) => {
         <title>NEXTJS x SUPABASE | LAZY LOAD IMAGES</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="mb-10 space-y-2">
+      <div className="mb-10 space-y-2 flex flex-col justify-center items-center">
         <h1 className="text-center font-bold text-lg md:text-xl xl:text-2xl">
           NEXTJS x SUPABASE | LAZY LOAD IMAGES
         </h1>
         <h2 className="text-center font-extralight text-sm">
           Practicing purpose
         </h2>
+        <div className="cursor-pointer">
+          <Link href={"https://github.com/yongvuthivann/next-supa-gallery"}>
+            <AiOutlineGithub className="w-8 h-8" />
+          </Link>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-6 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
