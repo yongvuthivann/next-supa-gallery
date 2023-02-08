@@ -21,7 +21,7 @@ const Home = ({ images }: props) => {
           NEXTJS x SUPABASE | LAZY LOAD IMAGES
         </h1>
         <h2 className="text-center font-extralight text-sm">
-          Practing purpose
+          Practicing purpose
         </h2>
       </div>
 
